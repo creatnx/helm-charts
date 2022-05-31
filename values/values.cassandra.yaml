@@ -9,11 +9,11 @@ server:
         driver: "cassandra"
 
         cassandra:
-          hosts: ["cassandra.default.svc.cluster.local"]
+          hosts: ["10.148.0.3", "10.148.0.4", "10.148.0.8"]
           port: 9042
           keyspace: temporal
-          user: "user"
-          password: "password"
+          user: ""
+          password: ""
           existingSecret: ""
           replicationFactor: 1
           consistency:
@@ -25,11 +25,11 @@ server:
         driver: "cassandra"
 
         cassandra:
-          hosts: ["cassandra.default.svc.cluster.local"]
+          hosts: ["10.148.0.3", "10.148.0.4", "10.148.0.8"]
           port: 9042
           keyspace: temporal_visibility
-          user: "user"
-          password: "password"
+          user: ""
+          password: ""
           existingSecret: ""
           replicationFactor: 1
           consistency:
