@@ -1,6 +1,6 @@
 server:
   config:
-    logLevel: "debug,info"
+    logLevel: "debug,info,error"
 
     numHistoryShards: 512
 
@@ -9,12 +9,11 @@ server:
         driver: "cassandra"
 
         cassandra:
-          hosts: ["34.143.202.235"]
+          hosts: ["34.143.202.235",]
           port: 9042
           keyspace: temporal
-          user: ""
-          password: ""
-          existingSecret: ""
+          user: "cassandra"
+          password: "cassandra"
           replicationFactor: 3
           consistency:
             default:
@@ -25,12 +24,11 @@ server:
         driver: "cassandra"
 
         cassandra:
-          hosts: ["34.143.202.235"]
+          hosts: ["34.143.202.235",]
           port: 9042
           keyspace: temporal_visibility
-          user: ""
-          password: ""
-          existingSecret: ""
+          user: "cassandra"
+          password: "cassandra"
           replicationFactor: 3
           consistency:
             default:
