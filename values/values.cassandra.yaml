@@ -9,7 +9,7 @@ server:
         driver: "cassandra"
 
         cassandra:
-          hosts: ["10.148.0.3",]
+          hosts: ["10.148.0.15","10.148.0.16","10.148.0.17"]
           port: 9042
           keyspace: temporal
           user: "cassandra"
@@ -24,7 +24,7 @@ server:
         driver: "cassandra"
 
         cassandra:
-          hosts: ["10.148.0.3",]
+          hosts: ["10.148.0.15",]
           port: 9042
           keyspace: temporal_visibility
           user: "cassandra"
