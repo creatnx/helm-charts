@@ -158,7 +158,7 @@ server:
           #   tx_isolation: 'READ-COMMITTED'
 
   frontend:
-    # replicaCount: 1
+    replicaCount: 2
     service:
       annotations: {} # Evaluated as template
       type: ClusterIP
@@ -178,7 +178,7 @@ server:
     affinity: {}
 
   history:
-    # replicaCount: 1
+    replicaCount: 4
     service:
       # type: ClusterIP
       port: 7234
@@ -235,7 +235,7 @@ server:
     affinity: {}
 
 admintools:
-  enabled: true
+  enabled: false
   image:
     repository: temporalio/admin-tools
     tag: 1.16.2
