@@ -85,7 +85,7 @@ server:
     logLevel: "debug,info"
 
     # IMPORTANT: This value cannot be changed, once it's set.
-    numHistoryShards: 512
+    numHistoryShards: 32
 
     persistence:
       defaultStore: default
