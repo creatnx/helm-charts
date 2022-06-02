@@ -6,3 +6,6 @@ server:
     matching.numTaskqueueWritePartitions:
     - value: 20
       constraints: {}
+  history.acquireShardConcurrency:
+    - constaints: {}
+      value: 140
